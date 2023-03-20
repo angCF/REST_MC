@@ -6,7 +6,7 @@ En este repositorio se encuentra la solucion al segundo taller de microservicios
 #### Para servidor y cliente - Limpiar e instalar.
 mvn clean install
 
-_Posteriormente, compilar de la siguiente manera:
+_Posteriormente, compilar de la siguiente manera:_
 
 #### Compilar servidor.
 mvn exec:java -Djaveriana.edu.ms.rest.Main
@@ -22,7 +22,7 @@ En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas.
 #### Para servidores y clientes - Limpiar e instalar.
 mvn clean install
 
-_Posteriormente, compilar de la siguiente manera:
+_Posteriormente, compilar de la siguiente manera:_
 
 #### Compilar Eureka.
 mvn spring-boot:run
