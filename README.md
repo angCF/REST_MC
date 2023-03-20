@@ -9,15 +9,21 @@ Jesús Traslaviña Fuentes
 ## Primera parte - Jersey
 
 #### Para servidor y cliente - Limpiar e instalar.
+```console
 mvn clean install
+```
 
 _Posteriormente, compilar de la siguiente manera:_
 
 #### Compilar servidor.
+```console
 mvn exec:java -Djaveriana.edu.ms.rest.Main
+```
 
 #### Compilar cliente.
+```console
 mvn exec:java -Djaveriana.edu.ms.rest.client.RestClientMain
+```
 
 #### Observación.
 En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas. De entrada lo primero que hará el programa será un GET que muestra la información en formato JSON, sin embargo hay otro GET que muestra información en formato XML. Para probar la funcionalidad del POST: se crea un cliente y este se pasa como parámetro, para el PUT y DELETE se pasan parámetros con base a la existencia de los paseos que se encuentran en el archivo data.json del servidor.
@@ -25,31 +31,65 @@ En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas.
 ## Segunda parte - Spring boot
 
 #### Para servidores y clientes - Limpiar e instalar.
+```console
 mvn clean install
+```
 
 _Posteriormente, compilar de la siguiente manera:_
 
 #### Compilar Eureka.
+```console
 mvn spring-boot:run
+```
 
 #### Compilar sumador. 
-Instancia 1: SERVER_PORT=9991 mvn spring-boot:run  
-Instancia 2: SERVER_PORT=9992 mvn spring-boot:run
+##### Instancia 1 
+```console
+SERVER_PORT=9991 mvn spring-boot:run  
+```
+
+##### Instancia 2 
+```console
+SERVER_PORT=9992 mvn spring-boot:run
+```
 
 #### Compilar restador.
-Instancia 1: SERVER_PORT=9981 mvn spring-boot:run  
-Instancia 2: SERVER_PORT=9982 mvn spring-boot:run
+##### Instancia 1 
+```console
+SERVER_PORT=9981 mvn spring-boot:run 
+```
+
+##### Instancia 2 
+```console
+SERVER_PORT=9982 mvn spring-boot:run
+```
 
 #### Compilar multiplicador.
-Instancia 1: SERVER_PORT=9971 mvn spring-boot:run  
-Instancia 2: SERVER_PORT=9972 mvn spring-boot:run
+##### Instancia 1 
+```console
+SERVER_PORT=9971 mvn spring-boot:run
+```
+
+##### Instancia 2 
+```console
+SERVER_PORT=9972 mvn spring-boot:run
+```
 
 #### Compilar divisor.
-Instancia 1: SERVER_PORT=9961 mvn spring-boot:run  
-Instancia 2: SERVER_PORT=9962 mvn spring-boot:run
+##### Instancia 1 
+```console
+SERVER_PORT=9961 mvn spring-boot:run  
+```
+
+##### Instancia 2 
+```console
+SERVER_PORT=9962 mvn spring-boot:run
+```
 
 #### Compilar calculadora.
+```console
 mvn spring-boot:run
+```
 
 ### URLs para invocar servicios
 #### Invocando desde << sumador >>
