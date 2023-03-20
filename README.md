@@ -1,4 +1,4 @@
-# Taller 02 - Microservicios, REST y Cloud
+# Taller 02 - Microservicios y Cloud
 En este repositorio se encuentra la solucion al segundo taller de microservicios.
 
 # Integrantes
