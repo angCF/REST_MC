@@ -34,13 +34,13 @@ http://localhost:8080/resource-travel/data/xml
 ### Crear un paseo.
 Para probar la funcionalidad del POST: se crea un paseo desde el lado del cliente, y éste se pasa como parámetro en el método POST. De momento, esto no se debería modificar, pues basta con sólo cambiar la información de los campos que se encuentran inicialmente.
 
-http://localhost:8080/resource-travel/paseo
+http://localhost:8080/resource-travel/crear/paseo
 
 ### Actualizar un paseo.
-http://localhost:8080/resource-travel/paseo?id=1&origen=Peru&destino=Canada
+http://localhost:8080/resource-travel/actualizar/paseo?id=1&origen=Peru&destino=Canada
 
 ### Eliminar un paseo.
-http://localhost:8080/resource-travel/paseo/1
+http://localhost:8080/resource-travel/eliminar/paseo/1
 
 
 ## Observación.
