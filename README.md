@@ -1,6 +1,11 @@
 # Taller 02 - Microservicios, REST y Cloud
 En este repositorio se encuentra la solucion al segundo taller de microservicios.
 
+## Integrantes
+Mauren Rivera Bautista
+Katherin Castro Florez
+Jesús Traslaviña Fuentes
+
 ## Primera parte - Jersey
 
 #### Para servidor y cliente - Limpiar e instalar.
