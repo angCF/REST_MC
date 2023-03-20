@@ -41,7 +41,7 @@ public class ResouceTravel {
     }
 
     @POST
-    @Path("paseo")
+    @Path("crear/paseo")
     @Consumes("application/json")
     @Produces("application/json")
     public ArrayList<Paseo> guardarPaseo(Paseo paseo) throws Exception {
@@ -54,7 +54,7 @@ public class ResouceTravel {
     }
 
     @PUT
-    @Path("paseo")
+    @Path("actualizar/paseo")
     @Consumes("application/json")
     @Produces("application/json")
     public ArrayList<Paseo> actualizarPaseo(@QueryParam("id") Integer id, @QueryParam("origen") String origen,
@@ -63,7 +63,7 @@ public class ResouceTravel {
     }
 
     @DELETE
-    @Path("paseo/{id}")
+    @Path("eliminar/paseo/{id}")
     @Produces("application/json")
     public ArrayList<Paseo> eliminarPaseo(@PathParam("id") String id) throws IOException {
         Integer idDelete = Integer.parseInt(id);
