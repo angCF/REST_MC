@@ -1,120 +1,120 @@
 # Taller 02 - Microservicios, REST y Cloud
 En este repositorio se encuentra la solucion al segundo taller de microservicios.
 
-## Integrantes
+# Integrantes
 Mauren Rivera Bautista,
 Katherin Castro Florez,
 Jesús Traslaviña Fuentes
 
-## Primera parte - Jersey
+# Primera parte - Jersey
 
-#### Para servidor y cliente - Limpiar e instalar.
+## Para servidor y cliente - Limpiar e instalar.
 ```console
 mvn clean install
 ```
 
 _Posteriormente, compilar de la siguiente manera:_
 
-#### Compilar servidor.
+## Compilar servidor.
 ```console
 mvn exec:java -Djaveriana.edu.ms.rest.Main
 ```
 
-#### Compilar cliente.
+## Compilar cliente.
 ```console
 mvn exec:java -Djaveriana.edu.ms.rest.client.RestClientMain
 ```
 
-#### Observación.
+## Observación.
 En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas. De entrada lo primero que hará el programa será un GET que muestra la información en formato JSON, sin embargo hay otro GET que muestra información en formato XML. Para probar la funcionalidad del POST: se crea un cliente y este se pasa como parámetro, para el PUT y DELETE se pasan parámetros con base a la existencia de los paseos que se encuentran en el archivo data.json del servidor.
 
-## Segunda parte - Spring boot
+# Segunda parte - Spring boot
 
-#### Para servidores y clientes - Limpiar e instalar.
+## Para servidores y clientes - Limpiar e instalar.
 ```console
 mvn clean install
 ```
 
 _Posteriormente, compilar de la siguiente manera:_
 
-#### Compilar Eureka.
+## Compilar Eureka.
 ```console
 mvn spring-boot:run
 ```
 
-#### Compilar sumador. 
-##### Instancia 1 
+## Compilar sumador. 
+### Instancia 1 
 ```console
 SERVER_PORT=9991 mvn spring-boot:run  
 ```
 
-##### Instancia 2 
+### Instancia 2 
 ```console
 SERVER_PORT=9992 mvn spring-boot:run
 ```
 
-#### Compilar restador.
-##### Instancia 1 
+## Compilar restador.
+### Instancia 1 
 ```console
 SERVER_PORT=9981 mvn spring-boot:run 
 ```
 
-##### Instancia 2 
+### Instancia 2 
 ```console
 SERVER_PORT=9982 mvn spring-boot:run
 ```
 
-#### Compilar multiplicador.
-##### Instancia 1 
+## Compilar multiplicador.
+### Instancia 1 
 ```console
 SERVER_PORT=9971 mvn spring-boot:run
 ```
 
-##### Instancia 2 
+### Instancia 2 
 ```console
 SERVER_PORT=9972 mvn spring-boot:run
 ```
 
-#### Compilar divisor.
-##### Instancia 1 
+## Compilar divisor.
+### Instancia 1 
 ```console
 SERVER_PORT=9961 mvn spring-boot:run  
 ```
 
-##### Instancia 2 
+### Instancia 2 
 ```console
 SERVER_PORT=9962 mvn spring-boot:run
 ```
 
-#### Compilar calculadora.
+## Compilar calculadora.
 ```console
 mvn spring-boot:run
 ```
 
-### URLs para invocar servicios
-#### Invocando desde << sumador >>
+## URLs para invocar servicios
+### Invocando desde << sumador >>
 http://localhost:9991/suma?a=20&b=10&user=carlosp  
 http://localhost:9991/suma/historial
 
-#### Invocando desde << restador >>
+### Invocando desde << restador >>
 http://localhost:9991/resta?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
-#### Invocando desde << multiplicador >>
+### Invocando desde << multiplicador >>
 http://localhost:9991/mutlip?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
-#### Invocando desde << divisor >>
+### Invocando desde << divisor >>
 http://localhost:9991/div?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
-#### Invocando desde << calculadora >> - Cada operación
+### Invocando desde << calculadora >> - Cada operación
 http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp  
 http://localhost:8888/calculadora/resta?a=20&b=10&user=carlosp  
 http://localhost:8888/calculadora/multip?a=20&b=10&user=carlosp  
 http://localhost:8888/calculadora/div?a=20&b=10&user=carlosp  
 
-#### Invocando desde << calculadora >> - Historial
+### Invocando desde << calculadora >> - Historial
 http://localhost:8888/calculadora/historial?operacion=suma  
 http://localhost:8888/calculadora/historial?operacion=resta  
 http://localhost:8888/calculadora/historial?operacion=multip  
