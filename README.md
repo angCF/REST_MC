@@ -24,9 +24,27 @@ mvn exec:java -Djaveriana.edu.ms.rest.Main
 ```console
 mvn exec:java -Djaveriana.edu.ms.rest.client.RestClientMain
 ```
+## URLs para invocar 
+### Listado de paseos en archivo JSON
+http://localhost:8080/resource-travel/data/json
+
+### Listado de paseos en archivo XML
+http://localhost:8080/resource-travel/data/xml
+
+### Crear un paseo.
+Para probar la funcionalidad del POST: se crea un paseo desde el lado del cliente, y éste se pasa como parámetro en el método POST. De momento, esto no se debería modificar, pues basta con sólo cambiar la información de los campos que se encuentran inicialmente.
+
+http://localhost:8080/resource-travel/paseo
+
+### Actualizar un paseo.
+http://localhost:8080/resource-travel/paseo?id=1&origen=Peru&destino=Canada
+
+### Eliminar un paseo.
+http://localhost:8080/resource-travel/paseo/1
+
 
 ## Observación.
-En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas. De entrada lo primero que hará el programa será un GET que muestra la información en formato JSON, sin embargo hay otro GET que muestra información en formato XML. Para probar la funcionalidad del POST: se crea un cliente y este se pasa como parámetro, para el PUT y DELETE se pasan parámetros con base a la existencia de los paseos que se encuentran en el archivo data.json del servidor.
+En el cliente se encuentran las operaciones de POST, PUT y DELETE comentareadas. De entrada lo primero que hará el programa será un GET que muestra la información en formato JSON, sin embargo hay otro GET que muestra información en formato XML. , para el PUT y DELETE se pasan parámetros con base a la existencia de los paseos que se encuentran en el archivo data.json del servidor.
 
 # Segunda parte - Spring boot
 
@@ -102,11 +120,11 @@ http://localhost:9991/resta/historial
 
 ### Invocando desde << multiplicador >>
 http://localhost:9991/mutlip?a=20&b=10&user=carlosp  
-http://localhost:9991/resta/historial
+http://localhost:9991/multip/historial
 
 ### Invocando desde << divisor >>
 http://localhost:9991/div?a=20&b=10&user=carlosp  
-http://localhost:9991/resta/historial
+http://localhost:9991/div/historial
 
 ### Invocando desde << calculadora >> - Cada operación
 http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp  
