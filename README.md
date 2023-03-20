@@ -28,19 +28,19 @@ _Posteriormente, compilar de la siguiente manera:_
 mvn spring-boot:run
 
 #### Compilar sumador. 
-Instancia 1: SERVER_PORT=9991 mvn spring-boot:run
+Instancia 1: SERVER_PORT=9991 mvn spring-boot:run  
 Instancia 2: SERVER_PORT=9992 mvn spring-boot:run
 
 #### Compilar restador.
-Instancia 1: SERVER_PORT=9981 mvn spring-boot:run
+Instancia 1: SERVER_PORT=9981 mvn spring-boot:run  
 Instancia 2: SERVER_PORT=9982 mvn spring-boot:run
 
 #### Compilar multiplicador.
-Instancia 1: SERVER_PORT=9971 mvn spring-boot:run
+Instancia 1: SERVER_PORT=9971 mvn spring-boot:run  
 Instancia 2: SERVER_PORT=9972 mvn spring-boot:run
 
 #### Compilar divisor.
-Instancia 1: SERVER_PORT=9961 mvn spring-boot:run
+Instancia 1: SERVER_PORT=9961 mvn spring-boot:run  
 Instancia 2: SERVER_PORT=9962 mvn spring-boot:run
 
 #### Compilar calculadora.
@@ -48,31 +48,31 @@ mvn spring-boot:run
 
 ### URLs para invocar servicios
 #### Invocando desde << sumador >>
-http://localhost:9991/suma?a=20&b=10&user=carlosp
+http://localhost:9991/suma?a=20&b=10&user=carlosp  
 http://localhost:9991/suma/historial
 
 #### Invocando desde << restador >>
-http://localhost:9991/resta?a=20&b=10&user=carlosp
+http://localhost:9991/resta?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
 #### Invocando desde << multiplicador >>
-http://localhost:9991/mutlip?a=20&b=10&user=carlosp
+http://localhost:9991/mutlip?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
 #### Invocando desde << divisor >>
-http://localhost:9991/div?a=20&b=10&user=carlosp
+http://localhost:9991/div?a=20&b=10&user=carlosp  
 http://localhost:9991/resta/historial
 
 #### Invocando desde << calculadora >> - Cada operación
-http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp
-http://localhost:8888/calculadora/resta?a=20&b=10&user=carlosp
-http://localhost:8888/calculadora/multip?a=20&b=10&user=carlosp
-http://localhost:8888/calculadora/div?a=20&b=10&user=carlosp
+http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp  
+http://localhost:8888/calculadora/resta?a=20&b=10&user=carlosp  
+http://localhost:8888/calculadora/multip?a=20&b=10&user=carlosp  
+http://localhost:8888/calculadora/div?a=20&b=10&user=carlosp  
 
 #### Invocando desde << calculadora >> - Historial
-http://localhost:8888/calculadora/historial?operacion=suma
-http://localhost:8888/calculadora/historial?operacion=resta
-http://localhost:8888/calculadora/historial?operacion=multip
-http://localhost:8888/calculadora/historial?operacion=div
+http://localhost:8888/calculadora/historial?operacion=suma  
+http://localhost:8888/calculadora/historial?operacion=resta  
+http://localhost:8888/calculadora/historial?operacion=multip  
+http://localhost:8888/calculadora/historial?operacion=div  
 
 #### Nota. El número de puerto puede cambiar en las instancias de sumador, restador, multiplicador y divisor.
