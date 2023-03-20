@@ -1,3 +1,23 @@
 [
-    
+    {
+        "identificador": 1,
+        "nombre": "Nathalia Castro with a little help from Jersey and Maven",
+        "lugarSalida": "Peru",
+        "lugarLlegada": "Canada",
+        "fecha": "19/02/22"
+    },
+    {
+        "identificador": 2,
+        "nombre": "Jesus with a little help from Jersey and Maven",
+        "lugarSalida": "Bogotá",
+        "lugarLlegada": "Santander",
+        "fecha": "15/03/23"
+    },
+    {
+        "identificador": 3,
+        "nombre": "Mau with a little help from Jersey and Maven",
+        "lugarSalida": "Bogotá",
+        "lugarLlegada": "Tolima",
+        "fecha": "01/03/23"
+    }
 ]
