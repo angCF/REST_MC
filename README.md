@@ -5,3 +5,7 @@ En este repositorio se encuentra la solucion al segundo taller de microservicios
 
 Compilar servidor: 
 Compilar cliente: mvn exec:java -Djaveriana.edu.ms.rest.Main
+
+## Segunda parte - Eureka
+
+
