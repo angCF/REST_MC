@@ -17,30 +17,42 @@ _Posteriormente, compilar de la siguiente manera:_
 
 ## Compilar servidor.
 ```console
-mvn exec:java -Djaveriana.edu.ms.rest.Main
+mvn exec:java -D co.edu.javeriana.ws.rest.Main
 ```
 
 ## Compilar cliente.
 ```console
-mvn exec:java -Djaveriana.edu.ms.rest.client.RestClientMain
+mvn exec:java -D co.edu.javeriana.ws.rest.client.RestClientMain
 ```
 ## URLs para invocar 
 ### Listado de paseos en archivo JSON
-http://localhost:8080/resource-travel/data/json
+http://localhost:8080/myresource/ridesJSON
 
 ### Listado de paseos en archivo XML
-http://localhost:8080/resource-travel/data/xml
+http://localhost:8080/myresource/ridesXML
 
 ### Crear un paseo.
 Para probar la funcionalidad del POST: se crea un paseo desde el lado del cliente, y éste se pasa como parámetro en el método POST. De momento, esto no se debería modificar, pues basta con sólo cambiar la información de los campos que se encuentran inicialmente.
 
-http://localhost:8080/resource-travel/crear/paseo
+http://localhost:8080/myresource/rides
+
+Ejemplo de Body:
+{
+    "id": 4,
+    "name": "Final de Champions",
+    "departure": "Bogotá",
+    "arrival": "Madrid",
+    "date": "2022-06-12T10:00:00Z"
+}
+
+### Actualizar nombre de un paseo.
+http://localhost:8080/myresource/rides/89?name=Paseo en Yate
 
 ### Actualizar un paseo.
-http://localhost:8080/resource-travel/actualizar/paseo?id=1&origen=Peru&destino=Canada
+http://localhost:8080/myresource/ride/89?origin=Medellin&destination=Paris
 
 ### Eliminar un paseo.
-http://localhost:8080/resource-travel/eliminar/paseo/1
+http://localhost:8080/myresource/ride/0
 
 
 ## Observación.
