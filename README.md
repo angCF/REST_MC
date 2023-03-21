@@ -115,16 +115,16 @@ http://localhost:9991/suma?a=20&b=10&user=carlosp
 http://localhost:9991/suma/historial
 
 ### Invocando desde << restador >>
-http://localhost:9991/resta?a=20&b=10&user=carlosp  
-http://localhost:9991/resta/historial
+http://localhost:9981/resta?a=20&b=10&user=carlosp  
+http://localhost:9981/resta/historial
 
 ### Invocando desde << multiplicador >>
-http://localhost:9991/multiplicacion?a=20&b=10&user=carlosp  
-http://localhost:9991/multip/historial
+http://localhost:9971/multiplicacion?a=20&b=10&user=carlosp  
+http://localhost:9971/multip/historial
 
 ### Invocando desde << divisor >>
-http://localhost:9991/division?a=20&b=10&user=carlosp  
-http://localhost:9991/div/historial
+http://localhost:9961/division?a=20&b=10&user=carlosp  
+http://localhost:9961/div/historial
 
 ### Invocando desde << calculadora >> - Cada operación
 http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp  
