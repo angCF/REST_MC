@@ -52,7 +52,7 @@ http://localhost:8080/myresource/rides/89?name=Paseo en Yate
 http://localhost:8080/myresource/ride/89?origin=Medellin&destination=Paris
 
 ### Eliminar un paseo.
-http://localhost:8080/myresource/ride/0
+http://localhost:8080/myresource/ride/16
 
 
 ## Observación.
