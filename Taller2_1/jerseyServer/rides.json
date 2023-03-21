@@ -1,0 +1,18 @@
+{
+    "rides": [
+        {
+            "id": 16,
+            "name": "MiPaseo",
+            "departure": "Aca",
+            "arrival": "Alla",
+            "date": "mar. 20, 2023, 08:45:01 p.�m."
+        },
+        {
+            "id": 94,
+            "name": "pasadia",
+            "departure": "Bogota",
+            "arrival": "Cartagegna",
+            "date": "mar. 20, 2023, 09:31:00 p. m."
+        }
+    ]
+}
