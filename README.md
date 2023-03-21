@@ -129,8 +129,8 @@ http://localhost:9961/div/historial
 ### Invocando desde << calculadora >> - Cada operación
 http://localhost:8888/calculadora/suma?a=20&b=10&user=carlosp  
 http://localhost:8888/calculadora/resta?a=20&b=10&user=carlosp  
-http://localhost:8888/calculadora/multiplicacion?a=20&b=10&user=carlosp  
-http://localhost:8888/calculadora/division?a=20&b=10&user=carlosp  
+http://localhost:8888/calculadora/multip?a=20&b=10&user=carlosp  
+http://localhost:8888/calculadora/div?a=20&b=10&user=carlosp  
 
 ### Invocando desde << calculadora >> - Historial
 http://localhost:8888/calculadora/historial?operacion=suma  
